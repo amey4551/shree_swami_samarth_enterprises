@@ -1,0 +1,103 @@
+{
+  "name": "landrick",
+  "version": "4.5.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^43.3.1",
+    "@ckeditor/ckeditor5-react": "^9.3.1",
+    "@iconscout/react-unicons": "^2.0.2",
+    "aos": "^2.3.4",
+    "apexcharts": "^3.54.0",
+    "bootstrap": "5.1.3",
+    "classnames": "^2.5.1",
+    "feather-icons-react": "^0.7.0",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.11.11",
+    "npm": "^10.9.0",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-background-slider": "^4.0.0",
+    "react-countdown": "^2.3.6",
+    "react-countdown-now": "^2.1.2",
+    "react-countup": "^6.5.3",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.2.0",
+    "react-flatpickr": "^3.10.13",
+    "react-modal-video": "^2.0.2",
+    "react-player": "^2.16.0",
+    "react-responsive-masonry": "^2.4.1",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.30.2",
+    "react-star-ratings": "^2.3.0",
+    "react-text-rotator": "^1.2.0",
+    "react-typist-component": "^1.1.1",
+    "reactstrap": "^9.2.3",
+    "sass": "1.77.6",
+    "simplebar-react": "^3.2.6",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14",
+    "web-vitals": "^3.5.0",
+    "yet-another-react-lightbox": "^3.21.6",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build --max_old_space_size=8000 build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,html,css,less,scss}\"",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "babelOptions": {
+      "presets": [
+        "@babel/preset-react"
+      ]
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "globals": {
+      "$": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-standard-react": "^13.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3"
+  }
+}
