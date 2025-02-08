@@ -4,9 +4,8 @@ import Services from './Services';
 import Projects from './Projects';
 
 import AboutUs from './AboutUs';
-import TeamMembers from './TeamMembers';
-import News from './News';
 import Popup from '../../components/Layout/popup';
+import Testimonial from '../SingleProduct/Testimonial';
 
 const Index = () => {
   const scrollNavigation = () => {
@@ -50,16 +49,25 @@ const Index = () => {
       <Section />
 
       {/* Project Planning */}
-      <Services />
+      {/* <Services /> */}
 
       {/* About Us */}
       <section className="section">
         <AboutUs />
         <Projects />
-        <TeamMembers />
+        {/* <TeamMembers /> */}
       </section>
-      <News />
+      {/* <News /> */}
+
+      
+        <Services />
+
+      <Testimonial/>
+
+
       <Popup />
+
+
     </React.Fragment>
   );
 };

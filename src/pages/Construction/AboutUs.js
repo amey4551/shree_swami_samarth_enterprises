@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Col, Container, Row } from "reactstrap";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Col, Container, Row } from 'reactstrap';
 
 //Import Icons
 // import FeatherIcon from "feather-icons-react";
 
 //import images
-import about from "../../assets/images/construction/about.jpg";
+import about from '../../assets/images/construction/about.jpg';
 import google from '../../assets/images/client/google.svg';
 import lenovo from '../../assets/images/client/lenovo.svg';
 import paypal from '../../assets/images/client/paypal.svg';
 import amazon from '../../assets/images/client/amazon.svg';
 
 // Modal Video
-import ModalVideo from "react-modal-video";
-import "../../../node_modules/react-modal-video/scss/modal-video.scss";
+import ModalVideo from 'react-modal-video';
+import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -64,22 +64,23 @@ export default class AboutUs extends Component {
                     About us
                   </span>
                   <h4 className="title mt-3 mb-4">
-                    We are the leader <br /> in the{" "}
-                    <span className="text-primary">Landrick</span>
+                    We are the leader  in{' '}
+                    <span className="text-primary">Goa</span>
                   </h4>
                   <p className="text-muted para-desc mx-auto">
-                    Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
-                    that can provide everything you need to generate awareness,
-                    drive traffic, connect.
-                  </p>
-                  <p className="text-muted para-desc mx-auto mb-0">
-                    The most well-known dummy text is the 'Lorem Ipsum', which
-                    is said to have originated in the 16th century. Lorem Ipsum
-                    is composed in a pseudo-Latin language which more or less
-                    corresponds to 'proper' Latin.
+                    At Shree Swami Samarth Enterprises, we take pride in being a
+                    trusted supplier of top-quality construction materials in
+                    Goa for the past 6 years. Specializing in river sand sourced
+                    from Maharashtra, we cater to the needs of professional
+                    builders, local contractors, and individual customers across
+                    Goa. In addition to river sand, we supply premium limestone
+                    and chisels, all carefully sourced from Maharashtra to
+                    ensure consistent quality. Our commitment to delivering the
+                    best materials without compromise has earned us the trust of
+                    our diverse clientele. Whether you're a builder managing
+                    large-scale projects or a local customer with smaller
+                    requirements, we are here to meet your needs with excellence
+                    and reliability.
                   </p>
                   <div className="mt-4">
                     <Link to="#" className="btn btn-primary">
@@ -104,35 +105,19 @@ export default class AboutUs extends Component {
               <div className="rounded shadow bg-light p-4">
                 <Row className="justify-content-center">
                   <Col lg={3} md={3} xs={6} className="text-center py-4">
-                    <img
-                      src={amazon}
-                      className="avatar avatar-ex-sm"
-                      alt=""
-                    />
+                    <img src={amazon} className="avatar avatar-ex-sm" alt="" />
                   </Col>
 
                   <Col lg={3} md={3} xs={6} className="text-center py-4">
-                    <img
-                      src={google}
-                      className="avatar avatar-ex-sm"
-                      alt=""
-                    />
+                    <img src={google} className="avatar avatar-ex-sm" alt="" />
                   </Col>
 
                   <Col lg={3} md={3} xs={6} className="text-center py-4">
-                    <img
-                      src={lenovo}
-                      className="avatar avatar-ex-sm"
-                      alt=""
-                    />
+                    <img src={lenovo} className="avatar avatar-ex-sm" alt="" />
                   </Col>
 
                   <Col lg={3} md={3} xs={6} className="text-center py-4">
-                    <img
-                      src={paypal}
-                      className="avatar avatar-ex-sm"
-                      alt=""
-                    />
+                    <img src={paypal} className="avatar avatar-ex-sm" alt="" />
                   </Col>
                 </Row>
               </div>
