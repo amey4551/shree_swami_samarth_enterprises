@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Row, Col } from "reactstrap";
+import React, { Component } from 'react';
+import { Row, Col } from 'reactstrap';
 
 class SectionTitle extends Component {
   render() {
@@ -28,18 +28,21 @@ class SectionTitle extends Component {
           </Col>
         </Row> */}
         <Row className="justify-content-center">
-          <Col className={this.props.isLeft ? "" : "col-12 text-center"}>
+          <Col className={this.props.isLeft ? '' : 'col-12 text-center'}>
             <div className="section-title mb-4 pb-2">
               <h4 className="title mb-4"> {this.props.title}</h4>
               <p
                 className={
                   this.props.isLeft
-                    ? "text-muted para-desc mb-0"
-                    : "text-muted para-desc mb-0 mx-auto"
+                    ? 'text-muted para-desc mb-0'
+                    : 'text-muted para-desc mb-0 mx-auto'
                 }
                 name="sectiondesc"
-              >Start working with {" "}
-                <span className="text-primary fw-bold">Landrick</span> {this.props.desc}</p>
+              >
+                description{' '}
+                {/* <span className="text-primary fw-bold">Landrick</span>  */}
+                {this.props.desc}
+              </p>
             </div>
           </Col>
         </Row>

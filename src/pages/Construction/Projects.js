@@ -30,37 +30,37 @@ class Projects extends Component {
       works: [
         {
           image: work1,
-          title: 'Iphone mockup',
+          title: 'Site 1',
           subtitle: 'Offices',
           category: 'Offices',
         },
         {
           image: work2,
-          title: 'Mockup Collection',
+          title: 'Site 2',
           subtitle: 'Mockup',
           category: 'Buildings',
         },
         {
           image: work3,
-          title: 'Abstract images',
+          title: 'Site 3',
           subtitle: 'Abstract',
           category: 'Roads',
         },
         {
           image: work4,
-          title: 'Yellow bg with Books',
+          title: 'Site 4',
           subtitle: 'Company V-card',
           category: 'Buildings',
         },
         {
           image: work5,
-          title: 'Company V-card',
+          title: 'Site 5',
           subtitle: 'V-card',
           category: 'Roads',
         },
         {
           image: work6,
-          title: 'Mockup box with paints',
+          title: 'Site 6',
           subtitle: 'Photography',
           category: 'Offices',
         },
@@ -109,10 +109,7 @@ class Projects extends Component {
                   Our latest projects <br /> check now dears
                 </h4>
                 <p className="text-muted para-desc mb-0">
-                  Start working with{' '}
-                  <span className="text-primary fw-bold">Landrick</span> that
-                  can provide everything you need to generate awareness, drive
-                  traffic, connect.
+                With years of experience in supplying top-quality building materials, we have built strong and lasting relationships with our clients. Our commitment to reliability, trust, and excellence has made us a preferred partner in countless successful projects. Explore our journey of delivering materials that build more than just structures—they build trust.
                 </p>
                 <div className="mt-4 d-none d-md-block">
                   <Link to="#" className="btn btn-soft-primary">
@@ -150,7 +147,7 @@ class Projects extends Component {
                             : 'list-inline-item categories-name border text-dark rounded'
                         }
                       >
-                        Offices
+                        Houses
                       </li>{' '}
                       <li
                         onClick={() => this.setCategory('Buildings')}

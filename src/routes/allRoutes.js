@@ -575,7 +575,7 @@ const routes = [
   { path: "/index-integration", component: <Integration /> },
   { path: "/index-task-management", component: <TaskManagement /> },
   { path: "/index-hospital", component: <Hospital />, isTopbarDark: true },
-  { path: "/index-construction", component: <Construction /> },
+  { path: "/home", component: <Construction /> },
   { path: "/index-email-inbox", component: <EmailInbox />, isTopbarDark: true },
   { path: "/index-landing-one", component: <LandingOne /> },
   { path: "/index-landing-two", component: <LandingTwo />, isTopbarDark: true },
@@ -684,9 +684,9 @@ const routes = [
   {
     path: "/",
     exact: true,
-    component: <Navigate to="/index" />,
+    component: <Navigate to="/home" />,
   },
-  { path: "/index", component: <Main />, isTopbarDark: true },
+  { path: "/home", component: <Main />, isTopbarDark: true },
 
 ];
 
