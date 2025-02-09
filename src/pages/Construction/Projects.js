@@ -9,12 +9,9 @@ import FeatherIcon from 'feather-icons-react';
 import { motion } from 'framer-motion';
 
 //Import Images
-import work1 from '../../assets/images/construction/o1.jpg';
-import work2 from '../../assets/images/construction/b1.jpg';
-import work3 from '../../assets/images/construction/r1.jpg';
-import work4 from '../../assets/images/construction/b2.jpg';
-import work5 from '../../assets/images/construction/r2.jpg';
-import work6 from '../../assets/images/construction/o2.jpg';
+import work1 from '../../assets/pictures/Images/Construction site/1736272661641.jpg';
+import work2 from '../../assets/pictures/Images/Construction site/1736272702535.jpg';
+import work3 from '../../assets/pictures/Images/Construction site/1736272732978.jpg';
 
 class Projects extends Component {
   constructor(props) {
