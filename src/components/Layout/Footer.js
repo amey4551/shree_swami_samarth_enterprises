@@ -23,12 +23,7 @@ class Footer extends Component {
       grid1: [
         { title: 'About us', link: '#' },
         { title: 'Services', link: '#' },
-        { title: 'Team', link: '#' },
-        { title: 'Pricing', link: '#' },
         { title: 'Project', link: '#' },
-        { title: 'Careers', link: '#' },
-        { title: 'Blog', link: '#' },
-        { title: 'Login', link: '#' },
       ],
       grid2: [
         { title: 'Terms of Services', link: '#' },
@@ -70,7 +65,7 @@ class Footer extends Component {
           <Container>
             <Row>
               <Col className="col-12">
-                <div className={this.props.isBorderLine ? "footer-py-60 footer-border" : "footer-py-60" }>
+                <div className={this.props.isBorderLine ? "footer-py-60 footer-border" : "footer-py-30" }>
                   <Row>
                     <Col lg={4} className="col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                       <Link to="#" className="logo-footer">
@@ -79,17 +74,17 @@ class Footer extends Component {
                           height="24"
                           alt="" />
                       </Link>
-                      <p
+                      {/* <p
                         className={
                           this.props.isLight ? 'mt-4 text-muted' : 'mt-4'
                         }
                       >
-                        Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p> */}
                       <ul
                         className={
                           this.props.isLight
                             ? 'list-unstyled social-icon social mb-0 m t-4'
-                            : 'list-unstyled social-icon foot-social-icon mb-0 mt-4'
+                            : 'list-unstyled social-icon foot-social-icon mb-0 mt-2'
                         }
                       >
                         <li className="list-inline-item me-1">
@@ -108,7 +103,7 @@ class Footer extends Component {
                             />
                           </Link>
                         </li>
-                        <li className="list-inline-item me-1">
+                        {/* <li className="list-inline-item me-1">
                           <Link to="#" className="rounded">
                             <FeatherIcon
                               icon="twitter"
@@ -123,11 +118,11 @@ class Footer extends Component {
                               className="fea icon-sm fea-social"
                             />
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </Col>
 
-                    <Col lg={2} md={4} className="col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <Col lg={2} md={4} className="col-12 mt-2 mt-sm-0 pt-2 pt-sm-0">
                       <h5
                         className={
                           this.props.isLight
@@ -154,7 +149,7 @@ class Footer extends Component {
                       </ul>
                     </Col>
 
-                    <Col lg={3} md={4} className="col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    {/* <Col lg={3} md={4} className="col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                       <h5
                         className={
                           this.props.isLight
@@ -179,9 +174,9 @@ class Footer extends Component {
                           </li>
                         ))}
                       </ul>
-                    </Col>
+                    </Col> */}
 
-                    <Col lg={3} md={4} className="col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    {/* <Col lg={3} md={4} className="col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                       <h5
                         className={
                           this.props.isLight
@@ -241,7 +236,7 @@ class Footer extends Component {
                           </Col>
                         </Row>
                       </Form>
-                    </Col>
+                    </Col> */}
                   </Row>
                 </div>
               </Col>
@@ -253,7 +248,7 @@ class Footer extends Component {
               <Row className="align-items-center">
                 <Col sm={6}>
                   <div className="text-sm-start">
-                    <p className="mb-0">© {(new Date().getFullYear())} Landrick. Design with {" "}
+                    <p className="mb-0">© {(new Date().getFullYear())} Shree swami samarth enterprises. Design with {" "}
                       <i className="mdi mdi-heart text-danger"></i> by {" "}
                       <Link
                         to="https://themesbrand.in/"
@@ -261,27 +256,11 @@ class Footer extends Component {
                         className="text-reset"
                         rel="noopener noreferrer"
                       >
-                        Themesbrand
+                        TeCoast
                       </Link>.</p>
                   </div>
                 </Col>
 
-                <Col sm={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                  <ul className="list-unstyled text-sm-end mb-0 d-flex gap-1 flex-wrap justify-content-sm-end">
-                    {this.state.paymentCardData.map((item, key) => (
-                      <li className="list-inline-item" key={key}>
-                        <Link to="#">
-                          <img
-                            src={item.img}
-                            className="avatar avatar-ex-sm"
-                            title={item.title}
-                            alt=""
-                          />
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </Col>
               </Row>
             </Container>
           </div>

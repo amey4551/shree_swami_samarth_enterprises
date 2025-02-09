@@ -46,24 +46,24 @@ class Projects extends Component {
           subtitle: 'Abstract',
           category: 'Roads',
         },
-        {
-          image: work4,
-          title: 'Site 4',
-          subtitle: 'Company V-card',
-          category: 'Buildings',
-        },
-        {
-          image: work5,
-          title: 'Site 5',
-          subtitle: 'V-card',
-          category: 'Roads',
-        },
-        {
-          image: work6,
-          title: 'Site 6',
-          subtitle: 'Photography',
-          category: 'Offices',
-        },
+        // {
+        //   image: work4,
+        //   title: 'Site 4',
+        //   subtitle: 'Company V-card',
+        //   category: 'Buildings',
+        // },
+        // {
+        //   image: work5,
+        //   title: 'Site 5',
+        //   subtitle: 'V-card',
+        //   category: 'Roads',
+        // },
+        // {
+        //   image: work6,
+        //   title: 'Site 6',
+        //   subtitle: 'Photography',
+        //   category: 'Offices',
+        // },
       ],
       displayCategory: 'All',
     };

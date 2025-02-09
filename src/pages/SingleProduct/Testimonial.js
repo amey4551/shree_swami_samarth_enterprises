@@ -102,9 +102,6 @@ class Testimonial extends Component {
             </Row>
           </Container>
 
-          <Container className="mt-5 pt-3">
-            <Partners />
-          </Container>
         </section>
       </React.Fragment>
     );

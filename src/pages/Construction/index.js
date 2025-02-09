@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import Section from './Section';
-import Services from './Services';
+import Services from '.././Hospital/Services';
 import Projects from './Projects';
 
 import AboutUs from './AboutUs';
 import Popup from '../../components/Layout/popup';
 import Testimonial from '../SingleProduct/Testimonial';
+import WhatWeDo from '../ITSolution/WhatWeDo';
 
 const Index = () => {
   const scrollNavigation = () => {
@@ -45,28 +46,19 @@ const Index = () => {
 
   return (
     <React.Fragment>
-      {/* Section */}
       <Section />
 
-      {/* Project Planning */}
-      {/* <Services /> */}
-
-      {/* About Us */}
+      <Services />
       <section className="section">
-        <AboutUs />
+        {/* <AboutUs /> */}
+
+        
+      <WhatWeDo />
+
         <Projects />
-        {/* <TeamMembers /> */}
       </section>
-      {/* <News /> */}
 
-      
-        <Services />
-
-      <Testimonial/>
-
-
-      <Popup />
-
+      <Testimonial />
 
     </React.Fragment>
   );
