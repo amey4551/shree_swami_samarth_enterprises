@@ -23,17 +23,9 @@ const WhatWeDo = () => {
     <React.Fragment>
       <section className="section">
         <Container>
-          <Row className="justify-content-center">
-            <div className="col-12 text-center">
-              {/* render Section title */}
-              <SectionTitle
-                title="What we do ?"
-                desc=" that can provide everything you need to generate awareness, drive traffic, connect"
-              />
-            </div>
-          </Row>
+          
           <Row>
-            {itSolutionWhatwedo.map((items, key) => (
+            {/* {itSolutionWhatwedo.map((items, key) => (
               <Col lg={3} md={4} className="mt-4 pt-2" key={key}>
                 <div className="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                   <span className="h1 icon-color">
@@ -48,16 +40,16 @@ const WhatWeDo = () => {
                   </span>
                 </div>
               </Col>
-            ))}
-            <Col lg={12} md={4} className="text-center mt-4 pt-2">
+            ))} */}
+            {/* <Col lg={12} md={4} className="text-center mt-4 pt-2">
               <Link to="#" className="btn btn-primary">
                 See more{" "}
                 <i>
                   <FeatherIcon icon="arrow-right" className="fea icon-sm" />
                 </i>
               </Link>
-            </Col>
-            <Container className="mt-100 mt-60">
+            </Col> */}
+            <Container className="">
               <Row className="align-items-center">
                 <Col lg={6} md={6}>
                   <Row className="align-items-center">
@@ -132,17 +124,25 @@ const WhatWeDo = () => {
                       <p className="text-muted para-desc">
                         Start working with{" "}
                         <span className="text-primary fw-bold">
-                          Landrick
+                          Shree swami samarth enterprises
                         </span>{" "}
-                        that can provide everything you need to generate
-                        awareness, drive traffic, connect.
+                        {/* that can provide everything you need to generate
+                        awareness, drive traffic, connect. */}
                       </p>
                       <p className="text-muted para-desc mb-0">
-                        The most well-known dummy text is the 'Lorem Ipsum',
-                        which is said to have originated in the 16th century.
-                        Lorem Ipsum is composed in a pseudo-Latin language
-                        which more or less corresponds to 'proper' Latin. It
-                        contains a series of real Latin words.
+                      we take pride in being a
+                    trusted supplier of top-quality construction materials in
+                    Goa for the past 6 years. Specializing in river sand sourced
+                    from Maharashtra, we cater to the needs of professional
+                    builders, local contractors, and individual customers across
+                    Goa. In addition to river sand, we supply premium limestone
+                    and chisels, all carefully sourced from Maharashtra to
+                    ensure consistent quality. Our commitment to delivering the
+                    best materials without compromise has earned us the trust of
+                    our diverse clientele. Whether you're a builder managing
+                    large-scale projects or a local customer with smaller
+                    requirements, we are here to meet your needs with excellence
+                    and reliability.
                       </p>
                     </div>
 
@@ -151,53 +151,28 @@ const WhatWeDo = () => {
                         <span className="text-primary h4 me-2">
                           <i className="uil uil-check-circle align-middle"></i>
                         </span>
-                        Fully Responsive
+                        Timely delivery
                       </li>
                       <li className="mb-0">
                         <span className="text-primary h4 me-2">
                           <i className="uil uil-check-circle align-middle"></i>
                         </span>
-                        Multiple Layouts
+                        Good quality material
                       </li>
                       <li className="mb-0">
                         <span className="text-primary h4 me-2">
                           <i className="uil uil-check-circle align-middle"></i>
                         </span>
-                        Suits Your Style
+                        Resonable prices
                       </li>
                     </ul>
 
-                    <div className="watch-video mt-4 pt-2">
-                      <Link
-                        to="//1.envato.market/landrickreactjs"
-                        target="_blank"
-                        className="btn btn-primary m-1"
-                      >
-                        Read More{" "}                       
-                        <i className="uil uil-angle-right-b align-middle"></i>                     
-                      </Link>{" "}
-                      <Link
-                        to="#"
-                        onClick={() => setOpen(true)}
-                        className="btn btn-icon btn-pills btn-primary m-1 lightbox"
-                      >                        
-                          <FeatherIcon icon="video" className="icons" />                        
-                      </Link>
-                      <span className="fw-bold text-uppercase small align-middle ms-1">
-                        Watch Now
-                      </span>
-                    </div>
                   </div>
                 </Col>
               </Row>
             </Container>
           </Row>
-          <ModalVideo
-            channel="youtube"
-            isOpen={open}
-            videoId="yba7hPeTSjk"
-            onClose={() => setOpen(false)}
-          />
+         
         </Container>
       </section>
     </React.Fragment>

@@ -6,7 +6,7 @@ import { Card, Col, Container, Row } from "reactstrap";
 import medical1 from '../../assets/images/medical/01.jpg';
 import medical2 from '../../assets/images/medical/02.jpg';
 import medical3 from '../../assets/images/medical/03.jpg'
-import medical4 from '../../assets/images/medical/04.jpg'
+// import medical4 from '../../assets/images/medical/04.jpg'
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
@@ -221,7 +221,7 @@ export default class QualifiedDoctors extends Component {
 
             <Col lg={3} md={6} className="mt-4 pt-2">
               <Card className="team team-primary text-center border-0 p-4 shadow">
-                <div className="position-relative">
+                {/* <div className="position-relative">
                   <img
                     src={medical4}
                     className="img-fluid avatar avatar-ex-large rounded-circle shadow"
@@ -269,7 +269,7 @@ export default class QualifiedDoctors extends Component {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <div className="card-body py-3 px-0 content">
                   <h5 className="mb-0">
                     <Link to="#" className="name text-dark">

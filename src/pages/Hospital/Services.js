@@ -15,14 +15,11 @@ import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
 
 // Import images
-import medical6 from "../../assets/images/medical/orthopedic.jpg";
-import medical5 from "../../assets/images/medical/medicine.jpg";
-import medical4 from "../../assets/images/medical/general.jpg";
-import medical3 from "../../assets/images/medical/eyecare.jpg";
-import medical2 from "../../assets/images/medical/cardio.jpg";
-import medical1 from "../../assets/images/medical/dental.jpg";
+import sand from "../../assets/pictures/Images/Sand/1736272782316.jpg";
+import chisel from "../../assets/pictures/Images/Chisel (khadi)/1736272453853.jpg";
+import limestone from "../../assets/pictures/Images/Red limestone/1736268896188.jpg";
 
-export default class Services extends Component {
+export default class  Services extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,16 +41,16 @@ export default class Services extends Component {
           <Row className="align-items-end mb-4 pb-2">
             <Col md={8}>
               <div className="section-title text-center text-md-start">
-                <h6 className="text-primary">Services</h6>
-                <h4 className="title mb-4">Our Medical Services</h4>
-                <p className="text-muted mb-0 para-desc">
+                <h4 className="text-primary">Services</h4>
+                {/* <h4 className="title mb-4">Our Services</h4> */}
+                {/* <p className="text-muted mb-0 para-desc">
                   Start working with{" "}
                   <span className="text-primary fw-bold">
                     Landrick
                   </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
-                </p>
+                </p> */}
               </div>
             </Col>
 
@@ -88,7 +85,7 @@ export default class Services extends Component {
                     }}
                   >
                     <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">Dental Service</h6>
+                      <h6 className="mb-0">Sand</h6>
                     </div>
                   </NavLink>
                 </NavItem>
@@ -105,7 +102,7 @@ export default class Services extends Component {
                     }}
                   >
                     <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">Cardiography Service</h6>
+                      <h6 className="mb-0">Chisel (Khadi)</h6>
                     </div>
                   </NavLink>
                 </NavItem>
@@ -122,61 +119,12 @@ export default class Services extends Component {
                     }}
                   >
                     <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">Eye Care Service</h6>
+                      <h6 className="mb-0">Red limestone (Chire)</h6>
                     </div>
                   </NavLink>
                 </NavItem>
 
-                <NavItem className="mt-2">
-                  <NavLink
-                    to="#"
-                    className={classnames(
-                      { active: this.state.activeTab === "4" },
-                      "rounded"
-                    )}
-                    onClick={() => {
-                      this.toggleTab("4");
-                    }}
-                  >
-                    <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">General Checkup</h6>
-                    </div>
-                  </NavLink>
-                </NavItem>
-
-                <NavItem className="mt-2">
-                  <NavLink
-                    to="#"
-                    className={classnames(
-                      { active: this.state.activeTab === "5" },
-                      "rounded"
-                    )}
-                    onClick={() => {
-                      this.toggleTab("5");
-                    }}
-                  >
-                    <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">Medicine Service</h6>
-                    </div>
-                  </NavLink>
-                </NavItem>
-
-                <NavItem className="mt-2">
-                  <NavLink
-                    to="#"
-                    className={classnames(
-                      { active: this.state.activeTab === "6" },
-                      "rounded"
-                    )}
-                    onClick={() => {
-                      this.toggleTab("6");
-                    }}
-                  >
-                    <div className="text-start py-1 px-2">
-                      <h6 className="mb-0">Orthopadic</h6>
-                    </div>
-                  </NavLink>
-                </NavItem>
+                
               </ul>
             </Col>
 
@@ -190,27 +138,16 @@ export default class Services extends Component {
                   tabId="1"
                 >
                   <img
-                    src={medical1}
+                    src={sand}
                     className="img-fluid rounded shadow"
                     alt=""
                   />
-                  <div className="mt-4">
-                    <h5>Dental Service</h5>
+                  <div className="mt-2">
+                    <h5>Sand</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      Best quality sand.
                     </p>
-                    <Link to="#" className="text-primary">
-                      Learn More{" "}
-                      <i>
-                        <FeatherIcon
-                          icon="arrow-right"
-                          className="fea icon-sm"
-                        />{" "}
-                      </i>
-                    </Link>
+                   
                   </div>
                 </TabPane>
 
@@ -219,27 +156,16 @@ export default class Services extends Component {
                   tabId="2"
                 >
                   <img
-                    src={medical2}
+                    src={chisel}
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
-                    <h5>Cardiography Service</h5>
+                    <h5>Chisel (Khadi)</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      Good quality chisel.
                     </p>
-                    <Link to="#" className="text-primary">
-                      Learn More{" "}
-                      <i>
-                        <FeatherIcon
-                          icon="arrow-right"
-                          className="fea icon-sm"
-                        />{" "}
-                      </i>
-                    </Link>
+                   
                   </div>
                 </TabPane>
 
@@ -248,27 +174,16 @@ export default class Services extends Component {
                   tabId="3"
                 >
                   <img
-                    src={medical3}
+                    src={limestone}
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
-                    <h5>Eye Care</h5>
+                    <h5>Red limestone (Chire)</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      Red limestone.
                     </p>
-                    <Link to="#" className="text-primary">
-                      Learn More{" "}
-                      <i>
-                        <FeatherIcon
-                          icon="arrow-right"
-                          className="fea icon-sm"
-                        />{" "}
-                      </i>
-                    </Link>
+                    
                   </div>
                 </TabPane>
 
@@ -276,11 +191,11 @@ export default class Services extends Component {
                   className="fade show bg-white p-4 rounded shadow"
                   tabId="4"
                 >
-                  <img
+                  {/* <img
                     src={medical4}
                     className="img-fluid rounded shadow"
                     alt=""
-                  />
+                  /> */}
                   <div className="mt-4">
                     <h5>General Body Checkup</h5>
                     <p className="text-muted my-3">
@@ -305,11 +220,11 @@ export default class Services extends Component {
                   className="fade show bg-white p-4 rounded shadow"
                   tabId="5"
                 >
-                  <img
+                  {/* <img
                     src={medical5}
                     className="img-fluid rounded shadow"
                     alt=""
-                  />
+                  /> */}
                   <div className="mt-4">
                     <h5>Medicine Services</h5>
                     <p className="text-muted my-3">
@@ -334,11 +249,11 @@ export default class Services extends Component {
                   className="fade show bg-white p-4 rounded shadow"
                   tabId="6"
                 >
-                  <img
+                  {/* <img
                     src={medical6}
                     className="img-fluid rounded shadow"
                     alt=""
-                  />
+                  /> */}
                   <div className="mt-4">
                     <h5>Orthopadic Service</h5>
                     <p className="text-muted my-3">
