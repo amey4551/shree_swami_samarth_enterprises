@@ -1,9 +1,4 @@
 import { Material, Project, Testimonial } from './types';
-import sand2 from '@assets/sand 2.jpg';
-import khadi2 from '@assets/khadi 2.jpg';
-import khadi3 from '@assets/khadi 3.jpg';
-import khadi4 from '@assets/khadi 4.jpg';
-import redStone4 from '@assets/red stone 4.jpg';
 
 // Sand products
 export const sandProducts: Material[] = [
@@ -11,7 +6,7 @@ export const sandProducts: Material[] = [
     id: 1,
     title: 'Construction Sand',
     description: 'High-quality sand perfect for concrete mixing and general construction work.',
-    image: 'https://images.pexels.com/photos/2734570/pexels-photo-2734570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/images/products/sand-4.jpg',
     category: 'sand',
     tag: 'Available in Bulk'
   },
@@ -19,7 +14,7 @@ export const sandProducts: Material[] = [
     id: 2,
     title: 'Fine Plastering Sand',
     description: 'Finely sieved sand ideal for plastering work and smooth finishes.',
-    image: 'https://images.pexels.com/photos/6419828/pexels-photo-6419828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/images/products/sand-3.jpg',
     category: 'sand',
     tag: 'Premium Quality'
   },
@@ -27,7 +22,7 @@ export const sandProducts: Material[] = [
     id: 3,
     title: 'Coarse Sand',
     description: 'Coarser grade sand suitable for foundation work and heavy-duty applications.',
-    image: sand2,
+    image: '/images/products/sand-2.jpg',
     category: 'sand',
     tag: 'Bulk Delivery Available'
   }
@@ -39,7 +34,7 @@ export const stoneProducts: Material[] = [
     id: 4,
     title: 'Building Stones',
     description: 'Durable stones for construction, walls, and foundations.',
-    image: khadi3,
+    image: '/images/products/red-stone-3.jpg',
     category: 'stone',
     tag: 'Multiple Sizes'
   },
@@ -47,7 +42,7 @@ export const stoneProducts: Material[] = [
     id: 5,
     title: 'Stone Aggregates',
     description: 'Crushed stone aggregates for concrete mixing and road construction.',
-    image: khadi2,
+    image: '/images/products/khadi.jpg',
     category: 'stone',
     tag: 'High Strength'
   },
@@ -55,7 +50,7 @@ export const stoneProducts: Material[] = [
     id: 6,
     title: 'Crushed Stone',
     description: 'Various grades of crushed stone for different construction applications.',
-    image: khadi4,
+    image: '/images/products/red-tone.jpg',
     category: 'stone',
     tag: 'Multiple Grades'
   }
@@ -67,7 +62,7 @@ export const limestoneProducts: Material[] = [
     id: 7,
     title: 'Red Limestone Blocks',
     description: 'Premium quality red limestone blocks for construction and decorative purposes.',
-    image: redStone4,
+    image: '/images/products/red-stone-4.jpg',
     category: 'limestone',
     tag: 'Custom Sizes Available'
   },
@@ -75,37 +70,45 @@ export const limestoneProducts: Material[] = [
     id: 8,
     title: 'Limestone Tiles & Slabs',
     description: 'Polished limestone tiles and slabs for flooring and cladding applications.',
-    image: 'https://images.pexels.com/photos/4505168/pexels-photo-4505168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/images/products/red-stone-size.jpg',
     category: 'limestone',
     tag: 'Multiple Finishes'
+  },
+  {
+    id: 9,
+    title: 'Interior Limestone',
+    description: 'Beautiful red limestone for interior walls, providing natural elegance to any space.',
+    image: '/images/products/red-stone-use.jpg',
+    category: 'limestone',
+    tag: 'Interior Design'
   }
 ];
 
 // Tool products
 export const toolProducts: Material[] = [
   {
-    id: 9,
+    id: 10,
     title: 'Stone Chisels',
     description: 'Professional-grade stone chisels for masonry work.',
     image: 'https://images.pexels.com/photos/5582597/pexels-photo-5582597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'chisel'
   },
   {
-    id: 10,
+    id: 11,
     title: 'Masonry Hammers',
     description: 'Durable hammers specifically designed for stone and brick work.',
     image: 'https://images.pexels.com/photos/220639/pexels-photo-220639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'chisel'
   },
   {
-    id: 11,
+    id: 12,
     title: 'Trowels & Floats',
     description: 'Essential tools for concrete and mortar work.',
     image: 'https://images.pexels.com/photos/4792727/pexels-photo-4792727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'chisel'
   },
   {
-    id: 12,
+    id: 13,
     title: 'Safety Equipment',
     description: 'Helmets, gloves, and safety gear for construction workers.',
     image: 'https://images.pexels.com/photos/2499007/pexels-photo-2499007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
