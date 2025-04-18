@@ -15,7 +15,7 @@ const WhatsAppFloat = () => {
         <div className="mb-4 flex flex-col space-y-3 items-end animate-fadeIn">
           <a 
             href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`}
-            className="bg-blue-600 text-white rounded-full h-12 pl-4 pr-4 flex items-center justify-center shadow-lg transition duration-300 text-sm"
+            className="bg-amber-700 hover:bg-amber-800 text-white rounded-full h-12 pl-4 pr-4 flex items-center justify-center shadow-lg transition duration-300 text-sm"
           >
             <span className="material-icon mr-1">call</span>
             <span>{contactInfo.phone.sales}</span>
@@ -23,7 +23,7 @@ const WhatsAppFloat = () => {
           
           <a 
             href={`mailto:${contactInfo.email.sales}`}
-            className="bg-red-600 text-white rounded-full h-12 pl-4 pr-4 flex items-center justify-center shadow-lg transition duration-300 text-sm"
+            className="bg-gray-700 hover:bg-gray-800 text-white rounded-full h-12 pl-4 pr-4 flex items-center justify-center shadow-lg transition duration-300 text-sm"
           >
             <span className="material-icon mr-1">email</span>
             <span>{contactInfo.email.sales}</span>
@@ -32,28 +32,28 @@ const WhatsAppFloat = () => {
       )}
       
       {/* Main WhatsApp button */}
-      <div className="relative">
+      <div className="relative group">
         <a 
           href={`https://wa.me/${contactInfo.whatsapp}`} 
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg transition duration-300"
+          className="bg-green-700 hover:bg-green-800 text-white rounded-full h-14 w-14 flex items-center justify-center shadow-lg transition duration-300"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="material-icon text-3xl">whatsapp</span>
+          <span className="material-icon text-2xl">whatsapp</span>
         </a>
         
         {/* Toggle button */}
         <button 
           onClick={toggleExpand} 
-          className={`absolute -top-3 -left-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full h-8 w-8 flex items-center justify-center shadow-md transition duration-300 ${isExpanded ? 'rotate-45' : ''}`}
+          className={`absolute -top-3 -left-3 bg-amber-600 hover:bg-amber-700 text-white rounded-full h-7 w-7 flex items-center justify-center shadow-md transition-all duration-300 ${isExpanded ? 'rotate-45 transform' : ''}`}
         >
           <span className="material-icon text-sm">{isExpanded ? 'close' : 'add'}</span>
         </button>
         
         {/* Label */}
-        <div className="absolute top-1/2 -left-32 transform -translate-y-1/2 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm font-medium animate-pulse">
-          Chat Now
-        </div>
+        <span className="absolute top-1/2 right-full mr-3 transform -translate-y-1/2 whitespace-nowrap bg-gray-800/80 backdrop-blur-sm text-white px-3 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          Chat on WhatsApp
+        </span>
       </div>
     </div>
   );

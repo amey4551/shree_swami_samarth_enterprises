@@ -202,29 +202,31 @@ const ToolsCategory = () => {
   return (
     <div className="mb-16">
       <div className="text-center mb-10">
-        <span className="material-icon text-4xl text-blue-600 mb-2">construction</span>
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
+          <span className="material-icon text-3xl text-amber-700">construction</span>
+        </div>
         <h3 className="text-2xl md:text-3xl font-poppins font-bold text-gray-800 mb-3">Construction Tools</h3>
-        <p className="max-w-2xl mx-auto text-gray-600">Quality tools and equipment for all your masonry and construction needs.</p>
+        <p className="max-w-2xl mx-auto text-gray-700">Quality tools and equipment for all your masonry and construction needs.</p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {toolProducts.map(tool => (
-          <div key={tool.id} className="gallery-item bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div key={tool.id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300">
             <div className="h-44 overflow-hidden relative">
               <img 
                 src={tool.image}
                 alt={tool.title}
-                className="w-full h-full object-cover transform hover:scale-110 transition duration-500"
+                className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
               />
-              <div className="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white text-xs py-1 px-3">
+              <div className="absolute top-0 right-0 bg-amber-700 text-white text-xs py-1 px-3 rounded-bl-md">
                 Tool
               </div>
             </div>
             <div className="p-4">
               <h4 className="font-medium text-lg mb-1 text-gray-800">{tool.title}</h4>
-              <p className="text-gray-500 text-sm mb-3">{tool.description}</p>
-              <a href="#contact" className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center">
-                <span>Inquire</span>
+              <p className="text-gray-600 text-sm mb-3">{tool.description}</p>
+              <a href="#contact" className="text-amber-700 hover:text-amber-800 font-medium text-sm flex items-center">
+                <span>Request Quote</span>
                 <span className="material-icon ml-1">arrow_forward</span>
               </a>
             </div>
@@ -246,9 +248,10 @@ const MaterialsSection = () => {
     <section id="materials" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="inline-block py-1 px-3 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-2">PREMIUM QUALITY</span>
+          <span className="inline-block py-1 px-3 bg-amber-100 text-amber-700 rounded text-xs font-semibold uppercase tracking-wider mb-2">Premium Quality</span>
           <h2 className="text-3xl md:text-5xl font-poppins font-bold text-gray-900 mb-4">Building Materials</h2>
-          <p className="max-w-2xl mx-auto text-gray-600">
+          <div className="h-1 w-24 bg-amber-700 mx-auto mb-6"></div>
+          <p className="max-w-2xl mx-auto text-gray-700">
             We provide superior quality construction materials delivered directly to your site. Browse our extensive range of products below.
           </p>
         </div>
