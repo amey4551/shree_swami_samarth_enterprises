@@ -7,8 +7,8 @@ const AboutSection = () => {
             <div className="relative">
               <div className="bg-secondary h-72 w-72 absolute -top-4 -left-4 rounded-lg"></div>
               <img 
-                src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Construction site with workers" 
+                src="/images/products/red-stone-use.jpg" 
+                alt="Premium red limestone in interior construction" 
                 className="relative z-10 rounded-lg shadow-xl object-cover h-80 w-full"
               />
             </div>

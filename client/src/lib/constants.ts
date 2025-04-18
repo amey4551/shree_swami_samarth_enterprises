@@ -120,45 +120,45 @@ export const toolProducts: Material[] = [
 export const projectItems: Project[] = [
   {
     id: 1,
-    title: 'Sunrise Heights',
-    location: 'Residential Complex, Mumbai',
-    description: 'Supplied premium sand and stone for this 200-unit residential complex.',
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Limestone Interior',
+    location: 'Residential Project, Kerala',
+    description: 'Supplied premium red limestone for this modern interior with elegant shelf design.',
+    image: '/images/products/red-stone-use.jpg'
   },
   {
     id: 2,
-    title: 'Tech Park Tower',
-    location: 'Commercial Building, Pune',
-    description: 'Provided limestone and crushed stone for this modern 12-story office building.',
-    image: 'https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Red Stone Blocks',
+    location: 'Construction Site, Tamil Nadu',
+    description: 'Provided precision-cut red limestone blocks for this residential construction project.',
+    image: '/images/products/red-stone-4.jpg'
   },
   {
     id: 3,
-    title: 'East-West Highway',
-    location: 'Infrastructure Project, Gujarat',
-    description: 'Supplied large quantities of aggregate and sand for this 50km highway project.',
-    image: 'https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Sand Supply Project',
+    location: 'Infrastructure Development, Maharashtra',
+    description: 'Supplied large quantities of high-quality construction sand for foundation work.',
+    image: '/images/products/sand-1.jpg'
   },
   {
     id: 4,
-    title: 'St. Mary\'s Academy',
-    location: 'Educational Institution, Delhi',
-    description: 'Provided red limestone blocks and construction sand for this prestigious school.',
-    image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Fine Sand Processing',
+    location: 'Construction Material Center, Gujarat',
+    description: 'Processing and supplying premium fine sand for plastering and concrete work.',
+    image: '/images/products/sand-4.jpg'
   },
   {
     id: 5,
-    title: 'Grand Plaza Mall',
-    location: 'Retail Complex, Bangalore',
-    description: 'Supplied premium quality sand, stone, and limestone for this 5-floor shopping mall.',
-    image: 'https://images.pexels.com/photos/3471028/pexels-photo-3471028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Stone Aggregates',
+    location: 'Commercial Project, Bangalore',
+    description: 'Supplied khadi stone aggregates for concrete mixing and foundation work.',
+    image: '/images/products/khadi.jpg'
   },
   {
     id: 6,
-    title: 'Serenity Villas',
-    location: 'Luxury Residential, Goa',
-    description: 'Provided premium red stone and decorative limestone for these high-end villas.',
-    image: 'https://images.pexels.com/photos/4513940/pexels-photo-4513940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    title: 'Red Stone Masonry',
+    location: 'Heritage Restoration, Rajasthan',
+    description: 'Provided premium red stone blocks for traditional masonry and architectural features.',
+    image: '/images/products/red-tone.jpg'
   }
 ];
 
@@ -192,8 +192,9 @@ export const testimonials: Testimonial[] = [
 
 // Red Limestone dimensions
 export const redLimestoneDimensions = [
-  { size: '9" × 4" × 3"', label: 'Standard' },
-  { size: '12" × 6" × 4"', label: 'Large' },
+  { size: '9" × 14" × 7"', label: 'Standard (चिरा)' },
+  { size: '100 sq.ft.', label: 'VERTICAL: 120 Blocks' },
+  { size: '100 sq.ft.', label: 'HORIZONTAL: 150 Blocks' },
   { size: 'Custom', label: 'Available' }
 ];
 
