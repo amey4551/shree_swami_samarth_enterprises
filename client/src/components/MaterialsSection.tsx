@@ -21,54 +21,49 @@ const MaterialCategory = ({
   return (
     <div className="mb-16">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="section-heading">{title}</h3>
-        <a href="#contact" className="text-earth-clayDark hover:text-earth-clay font-medium flex items-center group">
+        <h3 className="text-2xl font-poppins font-bold text-primary">{title}</h3>
+        <a href="#contact" className="text-accent hover:text-accent-light font-medium flex items-center">
           <span>Request Quote</span>
-          <span className="material-icon ml-1 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+          <span className="material-icon ml-1">arrow_forward</span>
         </a>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {materials.map((material, index) => (
-          <div key={material.id} className="rugged-card texture-overlay" data-category={material.category}>
-            <div className="h-64 overflow-hidden relative">
+          <div key={material.id} className="gallery-item bg-white rounded-lg shadow-md overflow-hidden" data-category={material.category}>
+            <div className="h-64 overflow-hidden">
               <img 
                 src={material.image}
                 alt={material.title}
                 className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
               />
-              {material.tag && (
-                <div className="absolute top-3 right-3 bg-earth-sand px-3 py-1 rounded-sm text-earth-clayDark font-medium text-sm shadow-md">
-                  {material.tag}
-                </div>
-              )}
             </div>
-            <div className="p-6 relative">
-              <h4 className="font-bold text-xl mb-2 text-earth-clayDark">{material.title}</h4>
-              <p className="text-neutral-dark opacity-75 mb-4">{material.description}</p>
+            <div className="p-6">
+              <h4 className="font-poppins font-semibold text-xl mb-2">{material.title}</h4>
+              <p className="text-neutral-medium mb-4">{material.description}</p>
               
               {/* Dimensions Section for Limestone */}
               {dimensions && dimensions[index] && (
-                <div className="bg-earth-sandLight border border-earth-sand p-4 rounded-sm mb-4">
-                  <h5 className="font-medium mb-3 flex items-center text-earth-clayDark">
-                    <span className="material-icon mr-1">straighten</span>
+                <div className="bg-neutral-lightest p-4 rounded-lg mb-4">
+                  <h5 className="font-medium mb-2 flex items-center">
+                    <span className="material-icon mr-1 text-secondary">straighten</span>
                     Standard Dimensions
                   </h5>
-                  <div className="grid grid-cols-3 gap-3 text-sm">
+                  <div className="grid grid-cols-3 gap-2 text-sm">
                     {dimensions[index].map((dimension, i) => (
-                      <div key={i} className="bg-white p-2 rounded-sm border border-earth-sand text-center shadow-sm">
-                        <span className="block font-medium text-earth-clayDark">{dimension.size}</span>
-                        <span className="text-neutral-dark opacity-75">{dimension.label}</span>
+                      <div key={i} className="bg-white p-2 rounded border border-neutral-light text-center">
+                        <span className="block font-medium">{dimension.size}</span>
+                        <span className="text-neutral-medium">{dimension.label}</span>
                       </div>
                     ))}
                   </div>
                 </div>
               )}
               
-              <div className="flex justify-between items-center mt-2">
-                <a href="#contact" className="bg-earth-clay hover:bg-earth-clayDark text-white font-medium py-2 px-6 rounded-sm transition-all duration-300 shadow-md flex items-center group">
-                  <span>Get Quote</span>
-                  <span className="material-icon ml-1 text-sm group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+              <div className="flex justify-between items-center">
+                {material.tag && <span className="text-primary font-medium">{material.tag}</span>}
+                <a href="#contact" className="bg-secondary hover:bg-secondary-light text-white font-medium py-2 px-4 rounded">
+                  Inquire
                 </a>
               </div>
             </div>
@@ -83,16 +78,16 @@ const ToolsCategory = () => {
   return (
     <div id="tools-section">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="section-heading">Construction Tools</h3>
-        <a href="#contact" className="text-earth-clayDark hover:text-earth-clay font-medium flex items-center group">
+        <h3 className="text-2xl font-poppins font-bold text-primary">Construction Tools</h3>
+        <a href="#contact" className="text-accent hover:text-accent-light font-medium flex items-center">
           <span>Request Quote</span>
-          <span className="material-icon ml-1 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+          <span className="material-icon ml-1">arrow_forward</span>
         </a>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {toolProducts.map(tool => (
-          <div key={tool.id} className="rugged-card texture-overlay" data-category="chisel">
+          <div key={tool.id} className="gallery-item bg-white rounded-lg shadow-md overflow-hidden" data-category="chisel">
             <div className="h-48 overflow-hidden">
               <img 
                 src={tool.image}
@@ -101,11 +96,11 @@ const ToolsCategory = () => {
               />
             </div>
             <div className="p-4">
-              <h4 className="font-bold text-lg mb-2 text-earth-clayDark">{tool.title}</h4>
-              <p className="text-neutral-dark opacity-75 text-sm mb-3">{tool.description}</p>
-              <a href="#contact" className="text-earth-clayDark hover:text-earth-clay font-medium text-sm flex items-center group">
-                <span>Get Quote</span>
-                <span className="material-icon ml-1 text-sm group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+              <h4 className="font-poppins font-semibold text-lg mb-2">{tool.title}</h4>
+              <p className="text-neutral-medium text-sm mb-3">{tool.description}</p>
+              <a href="#contact" className="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                <span>View Details</span>
+                <span className="material-icon ml-1">arrow_forward</span>
               </a>
             </div>
           </div>
@@ -127,68 +122,45 @@ const MaterialsSection = () => {
   };
 
   return (
-    <section id="materials" className="py-16 md:py-28 bg-earth-sandLight sand-pattern-bg">
+    <section id="materials" className="py-16 md:py-24 bg-neutral-lightest">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-earth-clayDark mb-6 relative inline-block">
-            Our Building Materials
-            <span className="absolute -bottom-3 left-0 w-full h-1 bg-earth-clay"></span>
-          </h2>
-          <p className="max-w-2xl mx-auto text-neutral-dark mt-8 text-lg">
-            We provide premium quality building materials for all your construction projects. 
-            From fine sand to durable red limestone, all our materials are sourced from the best suppliers.
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">Our Materials</h2>
+          <div className="h-1 w-20 bg-secondary mx-auto mb-6"></div>
+          <p className="max-w-2xl mx-auto text-neutral-dark">
+            We provide a wide range of high-quality building materials to meet all your construction needs. Browse through our categories below.
           </p>
         </div>
 
         {/* Materials Category Tabs */}
-        <div className="mb-16">
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 bg-white/80 backdrop-blur-sm p-4 rounded-sm shadow-md" id="materialTabs">
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-8" id="materialTabs">
             <button 
-              className={`py-2 px-4 md:px-6 rounded-sm border-b-2 ${
-                activeCategory === "all" 
-                  ? "border-earth-clay bg-earth-clay/10 text-earth-clayDark font-bold" 
-                  : "border-transparent hover:border-earth-clay/50 hover:bg-earth-clay/5"
-              } transition-all duration-300`}
+              className={`py-2 px-6 rounded-full ${activeCategory === "all" ? "bg-primary text-white" : "bg-neutral-light hover:bg-primary hover:text-white"} transition duration-300 font-medium`}
               onClick={() => handleCategoryChange("all")}
             >
               All Materials
             </button>
             <button 
-              className={`py-2 px-4 md:px-6 rounded-sm border-b-2 ${
-                activeCategory === "sand" 
-                  ? "border-earth-clay bg-earth-clay/10 text-earth-clayDark font-bold" 
-                  : "border-transparent hover:border-earth-clay/50 hover:bg-earth-clay/5"
-              } transition-all duration-300`}
+              className={`py-2 px-6 rounded-full ${activeCategory === "sand" ? "bg-primary text-white" : "bg-neutral-light hover:bg-primary hover:text-white"} transition duration-300 font-medium`}
               onClick={() => handleCategoryChange("sand")}
             >
               Sand
             </button>
             <button 
-              className={`py-2 px-4 md:px-6 rounded-sm border-b-2 ${
-                activeCategory === "stone" 
-                  ? "border-earth-clay bg-earth-clay/10 text-earth-clayDark font-bold" 
-                  : "border-transparent hover:border-earth-clay/50 hover:bg-earth-clay/5"
-              } transition-all duration-300`}
+              className={`py-2 px-6 rounded-full ${activeCategory === "stone" ? "bg-primary text-white" : "bg-neutral-light hover:bg-primary hover:text-white"} transition duration-300 font-medium`}
               onClick={() => handleCategoryChange("stone")}
             >
               Stone
             </button>
             <button 
-              className={`py-2 px-4 md:px-6 rounded-sm border-b-2 ${
-                activeCategory === "limestone" 
-                  ? "border-earth-clay bg-earth-clay/10 text-earth-clayDark font-bold" 
-                  : "border-transparent hover:border-earth-clay/50 hover:bg-earth-clay/5"
-              } transition-all duration-300`}
+              className={`py-2 px-6 rounded-full ${activeCategory === "limestone" ? "bg-primary text-white" : "bg-neutral-light hover:bg-primary hover:text-white"} transition duration-300 font-medium`}
               onClick={() => handleCategoryChange("limestone")}
             >
               Limestone
             </button>
             <button 
-              className={`py-2 px-4 md:px-6 rounded-sm border-b-2 ${
-                activeCategory === "chisel" 
-                  ? "border-earth-clay bg-earth-clay/10 text-earth-clayDark font-bold" 
-                  : "border-transparent hover:border-earth-clay/50 hover:bg-earth-clay/5"
-              } transition-all duration-300`}
+              className={`py-2 px-6 rounded-full ${activeCategory === "chisel" ? "bg-primary text-white" : "bg-neutral-light hover:bg-primary hover:text-white"} transition duration-300 font-medium`}
               onClick={() => handleCategoryChange("chisel")}
             >
               Chisel & Tools

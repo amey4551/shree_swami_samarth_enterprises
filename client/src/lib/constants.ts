@@ -1,16 +1,9 @@
 import { Material, Project, Testimonial } from './types';
-import sand1 from '@assets/sand 1.jpg';
 import sand2 from '@assets/sand 2.jpg';
-import sand3 from '@assets/sand 3.jpg';
-import sand4 from '@assets/sand 4.jpg';
-import khadi from '@assets/khadi.jpg';
 import khadi2 from '@assets/khadi 2.jpg';
 import khadi3 from '@assets/khadi 3.jpg';
 import khadi4 from '@assets/khadi 4.jpg';
-import redStone3 from '@assets/reds stone 3.jpg';
 import redStone4 from '@assets/red stone 4.jpg';
-import redStoneUse from '@assets/red stone use.jpg';
-import redStoneSize from '@assets/red stone size.jpg';
 
 // Sand products
 export const sandProducts: Material[] = [
@@ -18,7 +11,7 @@ export const sandProducts: Material[] = [
     id: 1,
     title: 'Construction Sand',
     description: 'High-quality sand perfect for concrete mixing and general construction work.',
-    image: sand1,
+    image: 'https://images.pexels.com/photos/2734570/pexels-photo-2734570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'sand',
     tag: 'Available in Bulk'
   },
@@ -26,15 +19,15 @@ export const sandProducts: Material[] = [
     id: 2,
     title: 'Fine Plastering Sand',
     description: 'Finely sieved sand ideal for plastering work and smooth finishes.',
-    image: sand3,
+    image: 'https://images.pexels.com/photos/6419828/pexels-photo-6419828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'sand',
     tag: 'Premium Quality'
   },
   {
     id: 3,
-    title: 'River Sand',
-    description: 'Natural river sand, washed and screened, perfect for premium construction work.',
-    image: sand4,
+    title: 'Coarse Sand',
+    description: 'Coarser grade sand suitable for foundation work and heavy-duty applications.',
+    image: sand2,
     category: 'sand',
     tag: 'Bulk Delivery Available'
   }
@@ -44,24 +37,24 @@ export const sandProducts: Material[] = [
 export const stoneProducts: Material[] = [
   {
     id: 4,
-    title: 'Khadi Building Stones',
-    description: 'Premium quality khadi stones ideal for walls, foundations, and structural construction.',
-    image: khadi,
+    title: 'Building Stones',
+    description: 'Durable stones for construction, walls, and foundations.',
+    image: khadi3,
     category: 'stone',
     tag: 'Multiple Sizes'
   },
   {
     id: 5,
     title: 'Stone Aggregates',
-    description: 'Crushed stone aggregates for concrete mixing and road construction. Superior durability.',
+    description: 'Crushed stone aggregates for concrete mixing and road construction.',
     image: khadi2,
     category: 'stone',
     tag: 'High Strength'
   },
   {
     id: 6,
-    title: 'Processed Stone Material',
-    description: 'Various grades of processed stone for specialized construction applications.',
+    title: 'Crushed Stone',
+    description: 'Various grades of crushed stone for different construction applications.',
     image: khadi4,
     category: 'stone',
     tag: 'Multiple Grades'
@@ -72,27 +65,19 @@ export const stoneProducts: Material[] = [
 export const limestoneProducts: Material[] = [
   {
     id: 7,
-    title: 'Premium Red Limestone',
-    description: 'Premium quality red limestone blocks for construction and decorative purposes. Known for durability.',
+    title: 'Red Limestone Blocks',
+    description: 'Premium quality red limestone blocks for construction and decorative purposes.',
     image: redStone4,
     category: 'limestone',
     tag: 'Custom Sizes Available'
   },
   {
     id: 8,
-    title: 'Red Limestone for Interiors',
-    description: 'Specially processed red limestone ideal for interior walls and design applications.',
-    image: redStoneUse,
+    title: 'Limestone Tiles & Slabs',
+    description: 'Polished limestone tiles and slabs for flooring and cladding applications.',
+    image: 'https://images.pexels.com/photos/4505168/pexels-photo-4505168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'limestone',
-    tag: 'Interior Grade'
-  },
-  {
-    id: 9,
-    title: 'Dimensional Red Limestone',
-    description: 'Precision-cut red limestone blocks with exact dimensions for specialized construction.',
-    image: redStoneSize,
-    category: 'limestone',
-    tag: 'Standardized Dimensions'
+    tag: 'Multiple Finishes'
   }
 ];
 
