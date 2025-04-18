@@ -30,15 +30,15 @@ const Header = () => {
         : "bg-white/95 shadow-md py-3"
     }`}>
       {/* Top contact strip */}
-      <div className="hidden lg:block bg-blue-900 text-white py-1">
+      <div className="hidden lg:block bg-gray-100 border-b border-gray-200 text-gray-700 py-1">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4 text-sm">
-              <a href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`} className="flex items-center hover:text-blue-200 transition">
+              <a href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`} className="flex items-center hover:text-amber-700 transition">
                 <span className="material-icon text-xs mr-1">call</span>
                 <span>{contactInfo.phone.sales}</span>
               </a>
-              <a href={`mailto:${contactInfo.email.info}`} className="flex items-center hover:text-blue-200 transition">
+              <a href={`mailto:${contactInfo.email.info}`} className="flex items-center hover:text-amber-700 transition">
                 <span className="material-icon text-xs mr-1">email</span>
                 <span>{contactInfo.email.info}</span>
               </a>
@@ -50,7 +50,7 @@ const Header = () => {
               </p>
               <a 
                 href={`https://wa.me/${contactInfo.whatsapp}`}
-                className="flex items-center bg-green-600 hover:bg-green-700 px-3 py-1 rounded-full text-white transition"
+                className="flex items-center bg-amber-700 hover:bg-amber-800 px-3 py-1 rounded text-white transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -66,15 +66,15 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo Area */}
           <div className="flex items-center py-1">
-            <div className="relative">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-poppins font-bold px-1 py-2 rounded">
-                <span className="text-3xl tracking-tight">RETIWALA</span>
+            <div>
+              <div className="flex items-center">
+                <span className="text-3xl font-poppins font-bold text-gray-800">RETI<span className="text-amber-700">WALA</span></span>
+                <div className="ml-2 bg-amber-700 text-white text-xs px-2 py-0.5 rounded-sm">
+                  EST. 2008
+                </div>
               </div>
-              <div className="absolute -bottom-2 right-0 bg-yellow-500 text-black text-xs px-2 py-0.5 rounded shadow-sm font-semibold">
-                Since 2008
-              </div>
+              <div className="text-gray-500 text-xs tracking-wider">BUILDING MATERIALS SUPPLIER</div>
             </div>
-            <div className="ml-3 text-gray-600 text-sm font-medium hidden md:block">Building Materials Supplier</div>
           </div>
           
           {/* Mobile menu button */}
@@ -88,22 +88,22 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
-            <a href="#home" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-100 transition">
+            <a href="#home" className="px-3 py-2 text-gray-700 hover:text-amber-700 font-medium rounded-md hover:bg-gray-100 transition">
               Home
             </a>
-            <a href="#materials" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-100 transition">
+            <a href="#materials" className="px-3 py-2 text-gray-700 hover:text-amber-700 font-medium rounded-md hover:bg-gray-100 transition">
               Materials
             </a>
-            <a href="#projects" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-100 transition">
+            <a href="#projects" className="px-3 py-2 text-gray-700 hover:text-amber-700 font-medium rounded-md hover:bg-gray-100 transition">
               Projects
             </a>
-            <a href="#testimonials" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-100 transition">
+            <a href="#testimonials" className="px-3 py-2 text-gray-700 hover:text-amber-700 font-medium rounded-md hover:bg-gray-100 transition">
               Testimonials
             </a>
-            <a href="#about" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-100 transition">
+            <a href="#about" className="px-3 py-2 text-gray-700 hover:text-amber-700 font-medium rounded-md hover:bg-gray-100 transition">
               About
             </a>
-            <a href="#contact" className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition flex items-center">
+            <a href="#contact" className="ml-2 px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded transition flex items-center">
               <span className="material-icon mr-1">contacts</span>
               Contact Us
             </a>
@@ -115,42 +115,42 @@ const Header = () => {
           <nav className="py-4 flex flex-col space-y-3 border-t border-gray-200 mt-2">
             <a 
               href="#home" 
-              className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-100 rounded-md transition"
+              className="px-4 py-2 text-gray-700 hover:text-amber-700 font-medium hover:bg-gray-100 rounded-md transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="#materials" 
-              className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-100 rounded-md transition"
+              className="px-4 py-2 text-gray-700 hover:text-amber-700 font-medium hover:bg-gray-100 rounded-md transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Materials
             </a>
             <a 
               href="#projects" 
-              className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-100 rounded-md transition"
+              className="px-4 py-2 text-gray-700 hover:text-amber-700 font-medium hover:bg-gray-100 rounded-md transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="#testimonials" 
-              className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-100 rounded-md transition"
+              className="px-4 py-2 text-gray-700 hover:text-amber-700 font-medium hover:bg-gray-100 rounded-md transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
             </a>
             <a 
               href="#about" 
-              className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-100 rounded-md transition"
+              className="px-4 py-2 text-gray-700 hover:text-amber-700 font-medium hover:bg-gray-100 rounded-md transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#contact" 
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition flex items-center justify-center"
+              className="px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded transition flex items-center justify-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="material-icon mr-1">contacts</span>
@@ -162,14 +162,14 @@ const Header = () => {
           <div className="grid grid-cols-2 gap-3 py-4 border-t border-gray-200">
             <a 
               href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`}
-              className="flex items-center justify-center bg-green-600 text-white py-2 px-3 rounded-lg"
+              className="flex items-center justify-center bg-amber-700 text-white py-2 px-3 rounded"
             >
               <span className="material-icon mr-1">call</span>
               <span>Call Now</span>
             </a>
             <a 
               href={`https://wa.me/${contactInfo.whatsapp}`}
-              className="flex items-center justify-center bg-green-500 text-white py-2 px-3 rounded-lg"
+              className="flex items-center justify-center bg-green-700 text-white py-2 px-3 rounded"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -178,10 +178,10 @@ const Header = () => {
             </a>
             <a 
               href={`mailto:${contactInfo.email.info}`}
-              className="flex items-center justify-center bg-blue-600 text-white py-2 px-3 rounded-lg col-span-2"
+              className="flex items-center justify-center bg-gray-600 text-white py-2 px-3 rounded col-span-2"
             >
               <span className="material-icon mr-1">email</span>
-              <span>Email: {contactInfo.email.info}</span>
+              <span>Email Us</span>
             </a>
           </div>
         </div>

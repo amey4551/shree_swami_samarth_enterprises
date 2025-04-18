@@ -2,66 +2,60 @@ import { contactInfo } from "@/lib/constants";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-r from-blue-700 to-purple-700 text-white">
-      <div 
-        className="absolute inset-0 bg-black opacity-20"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay',
-        }}
-      ></div>
-      
-      {/* Quick Contact Bar for Mobile */}
-      <div className="absolute top-0 w-full bg-black bg-opacity-60 py-2 md:hidden z-20">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <a href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`} className="flex items-center text-white text-sm">
-            <span className="material-icon mr-1 text-green-400">phone</span>
-            <span className="font-medium">{contactInfo.phone.sales}</span>
-          </a>
-          <a href={`https://wa.me/${contactInfo.whatsapp}`} className="flex items-center text-white text-sm">
-            <span className="material-icon mr-1 text-green-400">whatsapp</span>
-            <span className="font-medium">WhatsApp</span>
-          </a>
-        </div>
+    <section id="home" className="relative text-gray-800">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 bg-gray-900/30">
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'brightness(0.85)',
+          }}
+        ></div>
       </div>
       
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        <div className="max-w-4xl mx-auto text-center md:text-left md:mx-0">
-          <div className="animate-fadeIn">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-4 drop-shadow-lg">
-              Premium Building <span className="text-yellow-300">Materials</span>
+      {/* Content */}
+      <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
+        <div className="max-w-4xl">
+          <div className="p-6 md:p-10 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg animate-fadeIn">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold leading-tight mb-3">
+              Premium Building Materials <span className="text-amber-700">Supplier</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-light mb-6 text-neutral-lightest">
+            
+            <div className="h-1 w-24 bg-amber-700 mb-5"></div>
+            
+            <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-700">
               Quality Sand, Stone & Limestone
             </h2>
-            <p className="text-lg md:text-xl mb-8 text-neutral-lightest max-w-2xl mx-auto md:mx-0">
-              Serving contractors and homeowners for over 15 years with premium construction materials delivered on time.
+            
+            <p className="text-base md:text-lg mb-8 text-gray-600 max-w-2xl">
+              Serving contractors and homeowners for over 15 years with premium construction materials delivered promptly and reliably to your project site.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <a 
                 href={`tel:${contactInfo.phone.sales.replace(/[^0-9+]/g, '')}`} 
-                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300 shadow-lg flex items-center justify-center"
+                className="bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded text-center transition duration-300 shadow-md flex items-center justify-center"
               >
                 <span className="material-icon mr-2">call</span>
-                Call Now
+                Call For Pricing
               </a>
               <a 
                 href="#materials" 
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full text-center transition duration-300 shadow-lg flex items-center justify-center"
+                className="bg-gray-800 hover:bg-gray-900 text-white font-medium py-3 px-6 rounded text-center transition duration-300 shadow-md flex items-center justify-center"
               >
-                <span className="material-icon mr-2">home_repair_service</span>
-                View Materials
+                <span className="material-icon mr-2">category</span>
+                Browse Materials
               </a>
               <a 
                 href={`https://wa.me/${contactInfo.whatsapp}`}
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300 shadow-lg flex items-center justify-center"
+                className="bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-6 rounded text-center transition duration-300 shadow-md flex items-center justify-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="material-icon mr-2">whatsapp</span>
+                <span className="material-icon mr-2">chat</span>
                 WhatsApp
               </a>
             </div>
@@ -70,24 +64,24 @@ const HeroSection = () => {
       </div>
       
       {/* Quick Stats Banner */}
-      <div className="bg-black bg-opacity-60 py-4 relative z-10">
+      <div className="bg-gray-800 py-6 relative z-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center">
-              <p className="text-3xl font-bold text-yellow-400">15+</p>
-              <p className="text-sm">Years Experience</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-amber-500 mb-1">15+</p>
+              <p className="text-sm text-white">Years Experience</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-yellow-400">500+</p>
-              <p className="text-sm">Projects Completed</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-amber-500 mb-1">500+</p>
+              <p className="text-sm text-white">Projects Completed</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-yellow-400">100%</p>
-              <p className="text-sm">Quality Materials</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-amber-500 mb-1">100%</p>
+              <p className="text-sm text-white">Quality Materials</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-yellow-400">24/7</p>
-              <p className="text-sm">Customer Support</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-amber-500 mb-1">24/7</p>
+              <p className="text-sm text-white">Customer Support</p>
             </div>
           </div>
         </div>
