@@ -3,7 +3,7 @@ import {
   sandProducts, 
   stoneProducts, 
   limestoneProducts, 
-  toolProducts,
+  // toolProducts,
   redLimestoneDimensions,
   limestoneTilesDimensions
 } from "@/lib/constants";
@@ -33,7 +33,7 @@ const MaterialCard = ({
         <img 
           src={material.image}
           alt={material.title}
-          className="w-full h-full object-cover transform hover:scale-110 transition duration-700"
+          className={`w-full h-full object-cover transform hover:scale-110 transition duration-700`}
         />
         {/* Category label */}
         <div className="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white text-xs py-1 px-3 capitalize">
@@ -65,7 +65,7 @@ const MaterialCard = ({
         
         <div className="flex flex-col sm:flex-row gap-2 mt-3">
           <a 
-            href={`tel:+919876543210`} 
+            href={`tel:+91 94232 78813`} 
             className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm font-medium flex items-center justify-center flex-1"
           >
             <span className="material-icon mr-1 text-xs">call</span>
@@ -94,7 +94,7 @@ const FeaturedSandSection = () => {
           <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-3">Premium Quality Sand</h3>
           <div className="h-1 w-12 bg-amber-600 mx-auto mb-4"></div>
           <p className="text-gray-700 mb-4">
-            Our premium sand is carefully sourced and screened to ensure consistent quality for all your construction needs.
+            Our premium river sand is carefully sourced and screened to ensure consistent quality for all your construction needs.
           </p>
           
           <div className="flex justify-center mb-4">
@@ -118,7 +118,8 @@ const FeaturedSandSection = () => {
             <div className="h-1 w-16 bg-amber-600 mb-4"></div>
             
             <p className="text-gray-700 mb-6">
-              Our premium sand is carefully sourced and screened to ensure consistent quality for all your construction needs. Perfect for concrete mixing, plastering, and masonry work.
+              Finest quality river sand from Maharashtra (Kudal),
+              Our premium river sand is carefully sourced and screened to ensure consistent quality for all your construction needs. Perfect for concrete mixing, plastering, and masonry work.
             </p>
             
             <ul className="space-y-3 mb-6">
@@ -198,44 +199,44 @@ const MaterialCategory = ({
   );
 };
 
-const ToolsCategory = () => {
-  return (
-    <div className="mb-16">
-      <div className="text-center mb-10">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-          <span className="material-icon text-3xl text-amber-700">construction</span>
-        </div>
-        <h3 className="text-2xl md:text-3xl font-poppins font-bold text-gray-800 mb-3">Construction Tools</h3>
-        <p className="max-w-2xl mx-auto text-gray-700">Quality tools and equipment for all your masonry and construction needs.</p>
-      </div>
+// const ToolsCategory = () => {
+//   return (
+//     <div className="mb-16">
+//       <div className="text-center mb-10">
+//         <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
+//           <span className="material-icon text-3xl text-amber-700">construction</span>
+//         </div>
+//         <h3 className="text-2xl md:text-3xl font-poppins font-bold text-gray-800 mb-3">Construction Tools</h3>
+//         <p className="max-w-2xl mx-auto text-gray-700">Quality tools and equipment for all your masonry and construction needs.</p>
+//       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {toolProducts.map(tool => (
-          <div key={tool.id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300">
-            <div className="h-44 overflow-hidden relative">
-              <img 
-                src={tool.image}
-                alt={tool.title}
-                className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
-              />
-              <div className="absolute top-0 right-0 bg-amber-700 text-white text-xs py-1 px-3 rounded-bl-md">
-                Tool
-              </div>
-            </div>
-            <div className="p-4">
-              <h4 className="font-medium text-lg mb-1 text-gray-800">{tool.title}</h4>
-              <p className="text-gray-600 text-sm mb-3">{tool.description}</p>
-              <a href="#contact" className="text-amber-700 hover:text-amber-800 font-medium text-sm flex items-center">
-                <span>Request Quote</span>
-                <span className="material-icon ml-1">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+//       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+//         {toolProducts.map(tool => (
+//           <div key={tool.id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300">
+//             <div className="h-44 overflow-hidden relative">
+//               <img 
+//                 src={tool.image}
+//                 alt={tool.title}
+//                 className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+//               />
+//               <div className="absolute top-0 right-0 bg-amber-700 text-white text-xs py-1 px-3 rounded-bl-md">
+//                 Tool
+//               </div>
+//             </div>
+//             <div className="p-4">
+//               <h4 className="font-medium text-lg mb-1 text-gray-800">{tool.title}</h4>
+//               <p className="text-gray-600 text-sm mb-3">{tool.description}</p>
+//               <a href="#contact" className="text-amber-700 hover:text-amber-800 font-medium text-sm flex items-center">
+//                 <span>Request Quote</span>
+//                 <span className="material-icon ml-1">arrow_forward</span>
+//               </a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
 const MaterialsSection = () => {
   const [activeCategory, setActiveCategory] = useState<string>("sand");
@@ -295,7 +296,7 @@ const MaterialsSection = () => {
               <span className="material-icon mr-1 align-middle text-sm">view_in_ar</span>
               Limestone
             </button>
-            <button 
+            {/* <button 
               className={`py-2 px-5 rounded-md focus:outline-none whitespace-nowrap font-medium transition-all ${
                 activeCategory === "chisel" 
                   ? "bg-amber-700 text-white shadow-md" 
@@ -305,7 +306,7 @@ const MaterialsSection = () => {
             >
               <span className="material-icon mr-1 align-middle text-sm">construction</span>
               Tools & Equipment
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -389,7 +390,7 @@ const MaterialsSection = () => {
             />
           )}
 
-          {activeCategory === "chisel" && <ToolsCategory />}
+          {/* {activeCategory === "chisel" && <ToolsCategory />} */}
         </div>
         
         {/* Call to action */}
@@ -398,7 +399,7 @@ const MaterialsSection = () => {
           <p className="mb-6 text-gray-300">Contact our team for customized solutions and competitive bulk pricing</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href={`tel:+919876543210`} 
+              href={`tel:+91 94232 78813`} 
               className="bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded flex items-center justify-center"
             >
               <span className="material-icon mr-2">call</span>

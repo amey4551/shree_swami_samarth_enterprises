@@ -1,3 +1,5 @@
+import limestoneInterior from '../../../public/images/products/red-stone-use.jpg'
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
@@ -7,7 +9,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="bg-secondary h-72 w-72 absolute -top-4 -left-4 rounded-lg"></div>
               <img 
-                src="/images/products/red-stone-use.jpg" 
+                src={limestoneInterior}
                 alt="Premium red limestone in interior construction" 
                 className="relative z-10 rounded-lg shadow-xl object-cover h-80 w-full"
               />
@@ -20,7 +22,7 @@ const AboutSection = () => {
               Founded with a vision to provide high-quality building materials to the construction industry, Retiwala has established itself as a trusted name in the market. With over 15 years of experience, we understand the importance of quality and timely delivery in construction projects.
             </p>
             <p className="text-neutral-dark mb-6">
-              We specialize in supplying premium sand, limestone, building stones, and other essential construction materials. Our team of experts ensures that every product meets the highest standards of quality and durability.
+              We specialize in supplying premium River sand, limestone (chira), building stones, chisel and other essential construction materials. Our team of experts ensures that every product meets the highest standards of quality and durability.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="flex items-center">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { contactInfo } from "@/lib/constants";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,11 +51,12 @@ const Header = () => {
               </p>
               <a 
                 href={`https://wa.me/${contactInfo.whatsapp}`}
-                className="flex items-center bg-amber-700 hover:bg-amber-800 px-3 py-1 rounded text-white transition"
+                className="flex items-center bg-green-700 hover:bg-amber-800 px-3 py-1 rounded text-white transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="material-icon text-xs mr-1">whatsapp</span>
+                <IoLogoWhatsapp size={20} className="mr-2"/>
+
                 <span>WhatsApp</span>
               </a>
             </div>

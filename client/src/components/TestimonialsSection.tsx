@@ -98,7 +98,7 @@ const TestimonialsSection = () => {
         </div>
         
         {/* Trust indicators */}
-        <div className="mt-16 pt-12 border-t border-gray-200">
+        {/* <div className="mt-16 pt-12 border-t border-gray-200">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold text-gray-900">Trusted By Leading Construction Companies</h3>
           </div>
@@ -120,7 +120,30 @@ const TestimonialsSection = () => {
               <p className="font-medium text-gray-700 mt-2">Metro Contractors</p>
             </div>
           </div>
-        </div>
+        </div> */}
+        {/* <div className="mt-16 pt-12 border-t border-gray-200">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-semibold text-gray-900">Trusted By Leading Construction Companies</h3>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+            <div className="text-center">
+              <span className="material-icon text-5xl text-gray-500">apartment</span>
+              <p className="font-medium text-gray-700 mt-2">BuildRight Ltd.</p>
+            </div>
+            <div className="text-center">
+              <span className="material-icon text-5xl text-gray-500">business</span>
+              <p className="font-medium text-gray-700 mt-2">Skyline Developers</p>
+            </div>
+            <div className="text-center">
+              <span className="material-icon text-5xl text-gray-500">domain</span>
+              <p className="font-medium text-gray-700 mt-2">Creative Spaces</p>
+            </div>
+            <div className="text-center">
+              <span className="material-icon text-5xl text-gray-500">foundation</span>
+              <p className="font-medium text-gray-700 mt-2">Metro Contractors</p>
+            </div>
+          </div>
+        </div> */}
       </div>
     </section>
   );

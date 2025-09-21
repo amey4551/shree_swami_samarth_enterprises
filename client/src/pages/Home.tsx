@@ -7,10 +7,12 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const Home = () => {
   return (
     <>
+    <SpeedInsights/>
       <Header />
       <main>
         <HeroSection />
